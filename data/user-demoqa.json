@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "fullName": "Dev Tester",
+    "email": "dev.tester@example.com",
+    "currentAddress": "123 Dev Street, District 1, HCMC",
+    "permanentAddress": "456 Dev Avenue, Thu Duc City, HCMC"
+  },
+  "stg": {
+    "fullName": "Staging User",
+    "email": "staging.user@example.com",
+    "currentAddress": "789 Stage Blvd, Q3, HCMC",
+    "permanentAddress": "101 Staging Lane, HCMC"
+  },
+  "prod": {
+    "fullName": "Production QA",
+    "email": "prod.qa@example.com",
+    "currentAddress": "202 Production Road, Q5, HCMC",
+    "permanentAddress": "303 Prod Avenue, District 7, HCMC"
+  }
+}

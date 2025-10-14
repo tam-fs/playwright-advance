@@ -1,0 +1,13 @@
+{
+  "dev": {
+    "standard": { "username": "dev_user", "password": "dev_secret" },
+    "locked": { "username": "dev_locked_user", "password": "dev_secret" }
+  },
+  "stg": {
+    "standard": { "username": "standard_user", "password": "secret_sauce" },
+    "locked": { "username": "locked_out_user", "password": "secret_sauce" }
+  },
+  "prod": {
+    "standard": { "username": "prod_user", "password": "prod_secret" }
+  }
+}
