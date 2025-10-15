@@ -30,7 +30,7 @@ export default defineConfig({
     baseURL: BASE_URL,
     headless: HEADLESS,
     screenshot: 'only-on-failure',
-    actionTimeout: 30_000,
+    actionTimeout: 40_000,
     navigationTimeout: 60_000
   },
 

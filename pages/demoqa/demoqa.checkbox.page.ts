@@ -24,7 +24,7 @@ export class DemoqaCheckboxPage extends CommonPage {
 
   @step("Expand desktop dropdown")
   async expandDesktopDropdown(): Promise<void> {
-    await this.click(this.demoqaLocators.desktopDropdown.first());
+    await this.click(this.demoqaLocators.desktopDropdown);
   }
 
   @step("Check notes checkbox")
