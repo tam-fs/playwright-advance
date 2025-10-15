@@ -46,8 +46,7 @@ export class DemoqaLocators extends CommonLocators {
         this.rightClickMessage = this.page.locator('//p[@id="rightClickMessage"]');
         this.dynamicClickMessage = this.page.locator('//p[@id="dynamicClickMessage"]');
         this.homeDropdown = this.page.locator("//button[@title='Toggle']");
-                this.desktopDropdown = this.page.locator("//label[text()='Desktop']/ancestor::span[@class='rct-text']/button[@title='Toggle']");
-        //this.desktopDropdown = this.page.locator("//*[@id='tree-node']/ol/li/ol/li[1]/span/button");
+        this.desktopDropdown = this.page.locator('//span[text()="Desktop"]//ancestor::span//button');
         this.notesCheckbox = this.page.locator('//input[@id="tree-node-notes"]/following-sibling::span[@class="rct-checkbox"]');
         this.resultText = this.page.locator('//div[@id="result"]');
     }
