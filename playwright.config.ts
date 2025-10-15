@@ -14,7 +14,14 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: WORKERS,
-  reporter: 'html',
+  reporter: [
+    ['html'],
+    ['allure-playwright', {
+      outputFolder: 'allure-results',
+      detail: true,
+      suiteTitle: false
+    }]
+  ],
   use: {
     trace: 'on-first-retry',
     launchOptions: {
@@ -28,15 +35,15 @@ export default defineConfig({
   },
 
   projects: [
-    {
-      name: 'chromium',
-      use: { 
-        viewport: null, 
-        launchOptions: {
-          args: ['--start-maximized']
-        }
-      },
-    },
+    // {
+    //   name: 'chromium',
+    //   use: { 
+    //     viewport: null, 
+    //     launchOptions: {
+    //       args: ['--start-maximized']
+    //     }
+    //   },
+    // },
 
     {
       name: 'Microsoft Edge',

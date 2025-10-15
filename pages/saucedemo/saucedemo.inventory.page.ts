@@ -16,7 +16,6 @@ export class SaucedemoInventoryPage extends CommonPage {
     const btn = this.loc.productAddButton(name);
     await this.waitForVisible(btn);
     await this.click(btn);
-    await this.takeScreenshot("02-product-added");
   }
 
   @step("Go to cart")

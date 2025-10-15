@@ -33,6 +33,6 @@ export class SaucedemoLoginPage extends CommonPage {
     console.log("Login thành công");
     console.log(`Title của trang web là: ${pageTitle}`);
     
-    await this.takeScreenshot("01-login-success");
+    await this.takeScreenshot("04-1-login-success");
   }
 }

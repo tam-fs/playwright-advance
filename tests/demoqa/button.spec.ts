@@ -7,21 +7,20 @@ test.describe('demoqa button', () => {
 
     // Navigate to button page
     await buttonPage.navigateToButton();
-    await buttonPage.takeScreenshot('01-button-page-loaded');
 
     // Double click button
     await buttonPage.doubleClickButton();
     await buttonPage.verifyDoubleClickMessage();
-    await buttonPage.takeScreenshot('02-double-click-verified');
+    await buttonPage.takeScreenshot('02-1-double-click-verified');
 
     // Right click button
     await buttonPage.rightClickButton();
     await buttonPage.verifyRightClickMessage();
-    await buttonPage.takeScreenshot('03-right-click-verified');
+    await buttonPage.takeScreenshot('02-2-right-click-verified');
 
     // Click dynamic button
     await buttonPage.clickDynamicButton();
     await buttonPage.verifyDynamicClickMessage();
-    await buttonPage.takeScreenshot('04-dynamic-click-verified');
+    await buttonPage.takeScreenshot('02-3-dynamic-click-verified');
   });
 });

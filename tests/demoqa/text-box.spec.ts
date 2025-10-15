@@ -17,15 +17,13 @@ test.describe('demoqa text box', () => {
 
     // Fill the form
     await textBoxPage.fillTextBoxForm(user);
-    await textBoxPage.takeScreenshot('01-text-box-filled');
 
     // Submit the form
     await textBoxPage.submitForm();
-    await textBoxPage.takeScreenshot('02-text-box-submitted');
 
     // Verify form inputs
     await textBoxPage.verifyFormInputs(user);
-    await textBoxPage.takeScreenshot('03-text-box-verified');
+    await textBoxPage.takeScreenshot('01-text-box-verified');
 
     // Verify output
     await textBoxPage.verifyOutput(user);

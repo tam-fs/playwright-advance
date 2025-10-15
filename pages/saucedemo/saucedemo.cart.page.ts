@@ -17,7 +17,7 @@ export class SaucedemoCartPage extends CommonPage {
     await this.waitForVisible(productItem);
     await expect(productItem).toBeVisible();
     console.log(`Sản phẩm '${product}' đã có trong giỏ hàng`);
-    await this.takeScreenshot("03-cart-verified");
+    await this.takeScreenshot("04-2-cart-verified");
   }
 
   @step("Logout user")
@@ -25,6 +25,5 @@ export class SaucedemoCartPage extends CommonPage {
     await this.click(this.loc.menuButton);
     await this.waitForVisible(this.loc.logoutLink);
     await this.click(this.loc.logoutLink);
-    await this.takeScreenshot("04-logout");
   }
 }
